@@ -41,7 +41,6 @@ router.get('/', (req, res) => {
       res.status(500).json(err);
     });
 });
-
 // get single post
 router.get('/post/:id', (req, res) => {
   Post.findOne({
